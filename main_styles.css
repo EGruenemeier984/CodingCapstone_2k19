@@ -1,5 +1,5 @@
 body {
-    background-color: #0F1317;
+    background-color: rgb(38, 38, 39);
     color: white;
 }
 
@@ -12,9 +12,10 @@ body {
 }
 
 .cardCustom {
-    width: 49%;
+    width: 48%;
     background-color: #f90;
     border-radius: 2em;
+    margin: 1%;
 }
 
 .customNav {
@@ -28,4 +29,13 @@ body {
 hr {
     width: 50%;
     background-color: #f90;
+}
+
+footer {
+    background-color: #f90;
+}
+
+.iconCustom {
+    text-align: center;
+    margin-top: 1em;
 }
