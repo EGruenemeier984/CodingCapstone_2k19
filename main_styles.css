@@ -1,0 +1,31 @@
+body {
+    background-color: #0F1317;
+    color: white;
+}
+
+.logoNav {
+    margin-left: 1.5em;
+}
+
+.carousel {
+    border-radius: 2em;
+}
+
+.cardCustom {
+    width: 49%;
+    background-color: #f90;
+    border-radius: 2em;
+}
+
+.customNav {
+    background-color: #f90;
+}
+
+.container {
+    margin-top: 4em;
+}
+
+hr {
+    width: 50%;
+    background-color: #f90;
+}
