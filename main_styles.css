@@ -14,7 +14,7 @@ body {
 .cardCustom {
     width: 48%;
     background-color: #f90;
-    border-radius: 2em;
+    border-radius: 1em;
     margin: 1%;
 }
 
@@ -96,4 +96,34 @@ footer {
 #topButton.show {
     opacity: 1;
     visibility: visible;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #011826;
+}
+
+.btn {
+    background-color: #f90;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: rgb(223, 149, 39);
 }
