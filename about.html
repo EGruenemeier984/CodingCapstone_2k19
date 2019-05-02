@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- local CSS -->
     <link rel="stylesheet" href="main_styles.css" />
+    <link rel="stylesheet" href="mobile_styles.css" />
     <title>About Welding</title>
 </head>
 <a id="topButton"></a>
@@ -33,7 +34,7 @@
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="requirements.html">Requirements</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="CTSO.html">CTSO</a>
@@ -41,106 +42,139 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7">
-                <br>
-                <h2>About</h2>
-                <hr>
-                <p>Throughout the program students will learn about the industry of metalworking as well as the proper
-                    saftey that is used when welding. This program also teaches students valuable life skills that can
-                    be utilized far outside the world of welding.</p>
-                <p> West-MEC programs prepare students to seek one or more industry certification or licensure in their
-                    field of study, providing a pathway to economic independence.</p>
-                <p>The West-MEC welding program is available for High School students in their Junior and/or Senior
-                    year. You can learn more about the West-MEC welding program by navigating around this site and if
-                    you have any questions do not hesitate to check out the contact page. If you are interested in the
-                    program please click
-                    the apply button below.</p>
-                <br>
-            </div>
-            <div class="col-sm-5">
-                <img class="sideImage" src="img/WeldingAbout.png" alt="about" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-7">
-                <img class="sideImage" src="img/WeldingAbout1.jpg" alt="about1" />
-            </div>
-            <div class="col-sm-5" style="padding-top: 2em;">
-                <br>
-                <p>Throughout the first year in the West-Mec welding program the students will go in depth on the
-                    industry standards for welding practices. This includes learning the proper saftey when working, all
-                    the way to learning how to prepare the proper construction diagrams. Students will also have a hands
-                    on expirence when it comes to welding. Students will also have the opportunity to participate in the
-                    Skills USA competition, where students can show off their skills to recieve awards at the state and
-                    national levels.</p>
-                <p>Following the first year the students will strengthen their knowledge in the welding field and learn
-                    more about the proper way to plan and execute a project. They will also go in more depth about how
-                    to handle them selves when using welding tools. To learn more about the coursework, students go
-                    through in the welding program download the scope and sequence below.</p>
-                <br>
-            </div>
-        </div>
-        <a href="https://west-mec.edu/wp-content/uploads/2018/04/883_WELDING_TECHNOLOGY_SS.pdf" target="_blank"
-            download="Welding_Scope&Sequence"><button class="btn" style="width:100%"><i class="fa fa-download"></i>
-                Download Scope & Sequence</button></a>
-    </div>
+    <nav class="navbar navbar-expand navbar-dark fixed-top custNav "><a href="#menu-toggle" id="menu-toggle"
+            class="navbar-brand"><span class="navbar-toggler-icon"></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
+            aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation"> <span
+                class="navbar-toggler-icon"></span> </button> <img id="MobileLogo" src="img/WeldingLogo.png" alt="logo">
+        <div class="collapse navbar-collapse" id="navbarsExample02"></div>
 
-    <footer class="page-footer font-small indigo">
+    </nav>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li> <a href="index.html">Home</a></li>
+                <li class="active"> <a href="about.html">About</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
+                <li> <a href="requirements.html">Requirements</a> </li>
+                <li> <a href="CTSO.html">CTSO</a> </li>
+            </ul>
+        </div> <!-- /#sidebar-wrapper -->
 
-        <!-- Footer Links -->
         <div class="container">
-
-            <!-- Grid row-->
-            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-                <!-- Grid column -->
-                <div class="col-md-8 col-12 mt-5">
-                    <p style="line-height: 1.7rem">This website was created by two students in the West-Mec Coding
-                        program and was used as a program capstone for the program's first year students. This website
-                        reflects factual information about the Welding program offered by West-Mec. </p>
+            <div class="row">
+                <div class="col-sm-7">
+                    <br>
+                    <h2>About</h2>
+                    <hr>
+                    <p>Throughout the program students will learn about the industry of metalworking as well as the
+                        proper
+                        saftey that is used when welding. This program also teaches students valuable life skills that
+                        can
+                        be utilized far outside the world of welding.</p>
+                    <p> West-MEC programs prepare students to seek one or more industry certification or licensure in
+                        their
+                        field of study, providing a pathway to economic independence.</p>
+                    <p>The West-MEC welding program is available for High School students in their Junior and/or Senior
+                        year. You can learn more about the West-MEC welding program by navigating around this site and
+                        if
+                        you have any questions do not hesitate to check out the contact page. If you are interested in
+                        the
+                        program please click
+                        the apply button below.</p>
+                    <br>
                 </div>
-                <!-- Grid column -->
-
+                <div class="col-sm-5">
+                    <img class="sideImage" src="img/WeldingAbout.png" alt="about" />
+                </div>
             </div>
-            <!-- Grid row-->
-            <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+            <div class="row">
+                <div class="col-sm-7">
+                    <img class="sideImage" src="img/WeldingAbout1.jpg" alt="about1" />
+                </div>
+                <div class="col-sm-5" style="padding-top: 2em;">
+                    <br>
+                    <p>Throughout the first year in the West-Mec welding program the students will go in depth on the
+                        industry standards for welding practices. This includes learning the proper saftey when working,
+                        all
+                        the way to learning how to prepare the proper construction diagrams. Students will also have a
+                        hands
+                        on expirence when it comes to welding. Students will also have the opportunity to participate in
+                        the
+                        Skills USA competition, where students can show off their skills to recieve awards at the state
+                        and
+                        national levels.</p>
+                    <p>Following the first year the students will strengthen their knowledge in the welding field and
+                        learn
+                        more about the proper way to plan and execute a project. They will also go in more depth about
+                        how
+                        to handle them selves when using welding tools. To learn more about the coursework, students go
+                        through in the welding program download the scope and sequence below.</p>
+                    <br>
+                </div>
+            </div>
+            <a href="https://west-mec.edu/wp-content/uploads/2018/04/883_WELDING_TECHNOLOGY_SS.pdf" target="_blank"
+                download="Welding_Scope&Sequence"><button class="btn" style="width:100%"><i class="fa fa-download"></i>
+                    Download Scope & Sequence</button></a>
+        </div>
 
-            <!-- Grid row-->
-            <div class="row pb-3">
+        <footer class="page-footer font-small indigo">
 
-                <!-- Grid column -->
-                <div class="col-md-12">
+            <!-- Footer Links -->
+            <div class="container">
 
-                    <div class="mb-6 flex-center iconCustom">
+                <!-- Grid row-->
+                <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+                    <!-- Grid column -->
+                    <div class="col-md-8 col-12 mt-5">
+                        <p style="line-height: 1.7rem">This website was created by two students in the West-Mec Coding
+                            program and was used as a program capstone for the program's first year students. This
+                            website
+                            reflects factual information about the Welding program offered by West-Mec. </p>
+                    </div>
+                    <!-- Grid column -->
 
-                        <!-- Facebook -->
-                        <a class="fb-ic navLink" href="#">
-                            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
-                        </a>
-                        <!-- Twitter -->
-                        <a class="tw-ic navLink" href="#">
-                            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
-                        </a>
-                        <!--Instagram-->
-                        <a class="ins-ic navLink" href="#">
-                            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
-                        </a>
+                </div>
+                <!-- Grid row-->
+                <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+                <!-- Grid row-->
+                <div class="row pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12">
+
+                        <div class="mb-6 flex-center iconCustom">
+
+                            <!-- Facebook -->
+                            <a class="fb-ic navLink" href="#">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                            </a>
+                            <!-- Twitter -->
+                            <a class="tw-ic navLink" href="#">
+                                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                            </a>
+                            <!--Instagram-->
+                            <a class="ins-ic navLink" href="#">
+                                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                            </a>
+                        </div>
+
                     </div>
 
+
                 </div>
 
-
             </div>
+            <!-- Credits -->
+            <div class="text-center py-3">
+                <h6>Created by: Ethan Gruenemeier & Viktor Akanbi</h6>
+            </div>
+            <!-- Credits -->
 
-        </div>
-        <!-- Credits -->
-        <div class="text-center py-3">
-            <h6>Created by: Ethan Gruenemeier & Viktor Akanbi</h6>
-        </div>
-        <!-- Credits -->
-
-    </footer>
+        </footer>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

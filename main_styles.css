@@ -3,6 +3,11 @@ body {
     color: white;
 }
 
+.custNav {
+    display: none;
+    background: #f90;
+}
+
 .logoNav {
     margin-left: 1.5em;
 }

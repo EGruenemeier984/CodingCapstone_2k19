@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- local CSS -->
     <link rel="stylesheet" href="main_styles.css" />
+    <link rel="stylesheet" href="mobile_styles.css" />
     <title>Contact Welding</title>
 </head>
 <a id="topButton"></a>
@@ -34,7 +35,7 @@
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="requirements.html">Requirements</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="CTSO.html">CTSO</a>
@@ -42,165 +43,188 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <nav class="navbar navbar-expand navbar-dark fixed-top custNav "><a href="#menu-toggle" id="menu-toggle"
+            class="navbar-brand"><span class="navbar-toggler-icon"></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
+            aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation"> <span
+                class="navbar-toggler-icon"></span> </button> <img id="MobileLogo" src="img/WeldingLogo.png" alt="logo">
+        <div class="collapse navbar-collapse" id="navbarsExample02"></div>
 
-        <div class="row">
+    </nav>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a> </li>
+                <li class="active"> <a href="contact.html">Contact</a> </li>
+                <li> <a href="requirements.html">Requirements</a> </li>
+                <li> <a href="CTSO.html">CTSO</a> </li>
+            </ul>
+        </div> <!-- /#sidebar-wrapper -->
 
-            <div class="col-xl-8 offset-xl-2 py-5">
-
-                <h1>Contact Welding</h1>
-
-                <p class="lead">This form will send an email to the welding program.</p>
-
-                <!-- We're going to place the form here in the next step -->
-                <form id="contact-form" method="post" action="#" role="form">
-
-                    <div class="messages"></div>
-
-                    <div class="controls">
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="form_name">Firstname *</label>
-                                    <input id="form_name" type="text" name="name" class="form-control"
-                                        placeholder="Please enter your firstname *" required="required"
-                                        data-error="Firstname is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="form_lastname">Lastname *</label>
-                                    <input id="form_lastname" type="text" name="surname" class="form-control"
-                                        placeholder="Please enter your lastname *" required="required"
-                                        data-error="Lastname is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="form_email">Email *</label>
-                                    <input id="form_email" type="email" name="email" class="form-control"
-                                        placeholder="Please enter your email *" required="required"
-                                        data-error="Valid email is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="form_need">Please specify your need *</label>
-                                    <select id="form_need" name="need" class="form-control" required="required"
-                                        data-error="Please specify your need.">
-                                        <option value=""></option>
-                                        <option value="Request quotation">Request quotation</option>
-                                        <option value="Request order status">Request order status</option>
-                                        <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="form_message">Message *</label>
-                                    <textarea id="form_message" name="message" class="form-control"
-                                        placeholder="Message for me *" rows="4" required="required"
-                                        data-error="Please, leave us a message."></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <input type="submit" class="btn btn-light btn-send" value="Send message">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="text-muted">
-                                    <strong>*</strong> These fields are required.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card cardCustom">
-                <div class="card-body">
-                    <h2>Delphina Yazzie</h2>
-                    <p>West-Mec Co-chair Welding Instructor</p>
-                    <a href="mailto:delphina.yazzie@west-mec.edu">Send E-mail</a>
-                </div>
-            </div>
-            <div class="card cardCustom">
-                <div class="card-body">
-                    <h2>Troy Gabaldon</h2>
-                    <p>Central Campus Principal</p>
-                    <a href="mailto:delphina.yazzie@west-mec.edu">Send E-mail</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="page-footer font-small indigo">
-
-        <!-- Footer Links -->
         <div class="container">
 
-            <!-- Grid row-->
-            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-                <!-- Grid column -->
-                <div class="col-md-8 col-12 mt-5">
-                    <p style="line-height: 1.7rem">This website was created by two students in the West-Mec Coding
-                        program and was used as a program capstone for the program's first year students. This website
-                        reflects factual information about the Welding program offered by West-Mec. </p>
+            <div class="row">
+
+                <div class="col-xl-8 offset-xl-2 py-5">
+
+                    <h1>Contact Welding</h1>
+
+                    <p class="lead">This form will send an email to the welding program.</p>
+
+                    <!-- We're going to place the form here in the next step -->
+                    <form id="contact-form" method="post" action="#" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Please enter your firstname *" required="required"
+                                            data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control"
+                                            placeholder="Please enter your lastname *" required="required"
+                                            data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control"
+                                            placeholder="Please enter your email *" required="required"
+                                            data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">Please specify your need *</label>
+                                        <select id="form_need" name="need" class="form-control" required="required"
+                                            data-error="Please specify your need.">
+                                            <option value=""></option>
+                                            <option value="Request quotation">Request quotation</option>
+                                            <option value="Request order status">Request order status</option>
+                                            <option value="Request copy of an invoice">Request copy of an invoice
+                                            </option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control"
+                                            placeholder="Message for me *" rows="4" required="required"
+                                            data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-light btn-send" value="Send message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted">
+                                        <strong>*</strong> These fields are required.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
-                <!-- Grid column -->
-
             </div>
-            <!-- Grid row-->
-            <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+            <div class="row">
+                <div class="card cardCustom">
+                    <div class="card-body">
+                        <h2>Delphina Yazzie</h2>
+                        <p>West-Mec Co-chair Welding Instructor</p>
+                        <a href="mailto:delphina.yazzie@west-mec.edu">Send E-mail</a>
+                    </div>
+                </div>
+                <div class="card cardCustom">
+                    <div class="card-body">
+                        <h2>Troy Gabaldon</h2>
+                        <p>Central Campus Principal</p>
+                        <a href="mailto:delphina.yazzie@west-mec.edu">Send E-mail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <!-- Grid row-->
-            <div class="row pb-3">
+        <footer class="page-footer font-small indigo">
 
-                <!-- Grid column -->
-                <div class="col-md-12">
+            <!-- Footer Links -->
+            <div class="container">
 
-                    <div class="mb-6 flex-center iconCustom">
+                <!-- Grid row-->
+                <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+                    <!-- Grid column -->
+                    <div class="col-md-8 col-12 mt-5">
+                        <p style="line-height: 1.7rem">This website was created by two students in the West-Mec Coding
+                            program and was used as a program capstone for the program's first year students. This
+                            website
+                            reflects factual information about the Welding program offered by West-Mec. </p>
+                    </div>
+                    <!-- Grid column -->
 
-                        <!-- Facebook -->
-                        <a class="fb-ic navLink" href="#">
-                            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
-                        </a>
-                        <!-- Twitter -->
-                        <a class="tw-ic navLink" href="#">
-                            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
-                        </a>
-                        <!--Instagram-->
-                        <a class="ins-ic navLink" href="#">
-                            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
-                        </a>
+                </div>
+                <!-- Grid row-->
+                <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+                <!-- Grid row-->
+                <div class="row pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12">
+
+                        <div class="mb-6 flex-center iconCustom">
+
+                            <!-- Facebook -->
+                            <a class="fb-ic navLink" href="#">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                            </a>
+                            <!-- Twitter -->
+                            <a class="tw-ic navLink" href="#">
+                                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                            </a>
+                            <!--Instagram-->
+                            <a class="ins-ic navLink" href="#">
+                                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                            </a>
+                        </div>
+
                     </div>
 
+
                 </div>
 
-
             </div>
+            <!-- Credits -->
+            <div class="text-center py-3">
+                <h6>Created by: Ethan Gruenemeier & Viktor Akanbi</h6>
+            </div>
+            <!-- Credits -->
 
-        </div>
-        <!-- Credits -->
-        <div class="text-center py-3">
-            <h6>Created by: Ethan Gruenemeier & Viktor Akanbi</h6>
-        </div>
-        <!-- Credits -->
-
-    </footer>
+        </footer>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
