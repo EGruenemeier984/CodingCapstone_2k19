@@ -7,6 +7,19 @@
     .custNav {
         display: block;
     }
+
+}
+
+/* This effects the screens that are smaller than 414 pixels  */
+@media screen and (max-width: 414px) {
+    .cardCustom {
+        width: 100%;
+        margin: .5em;
+    }
+
+    .sideImage {
+        margin-top: 1em;
+    }
 }
 
 /*!

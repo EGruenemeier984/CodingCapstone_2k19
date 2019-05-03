@@ -132,3 +132,8 @@ a:hover {
 .btn:hover {
     background-color: rgb(223, 149, 39);
 }
+
+.list-group-item.active {
+    background-color: #f90;
+    border-color: #f90;
+}
