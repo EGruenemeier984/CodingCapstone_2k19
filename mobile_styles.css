@@ -17,6 +17,10 @@
         margin: .5em;
     }
 
+    .nav {
+        display: none;
+    }
+
     .sideImage {
         margin-top: 1em;
     }
