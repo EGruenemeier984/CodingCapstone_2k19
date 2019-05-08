@@ -1,12 +1,14 @@
 var options = ["Request a Tour", "Request Information", "Other"];
 
-$(document).ready(function () {
-    var collect = "";
-    for (var i = 0; i < options.length; i++) {
-        collect += `<option value=${i}> ${options[i]}</option>`
-    }
-    document.getElementById("form_need").innerHTML = collect;
-});
+if ($('#form_need').length > 0) {
+    $(function () {
+        var collect = "";
+        for (var i = 0; i < options.length; i++) {
+            collect += `<option value=${i}> ${options[i]}</option>`
+        }
+        document.getElementById("form_need").innerHTML = collect;
+    });
+}
 
 var btn = $('#topButton');
 
@@ -40,28 +42,32 @@ $(function () {
         }
     });
 });
+
 // CountDown Code
-const second = 1000,
-    minute = second * 60,
-    hour = minute * 60,
-    day = hour * 24;
+if ($('#countdown').length > 0) {
+    const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
 
-let countDown = new Date("August 1, 2019").getTime();
-x = setInterval(function () {
-    let now = new Date().getTime();
-    distance = countDown - now;
+    let countDown = new Date("August 1, 2019").getTime();
+    x = setInterval(function () {
+        let now = new Date().getTime();
+        distance = countDown - now;
 
-    $("#days").innerText = Math.floor(distance / (day));
-    $("#hours").innerText = Math.floor((distance % (day)) / (hour));
-    $("#minutes").innerText = Math.floor((distance % (hour)) / (minute));
-    $("#seconds").innerText = Math.floor((distance % (minute)) / (second));
+        document.getElementById("days").textContent = Math.floor(distance / (day));
+        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour));
+        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
+        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / (second));
 
-    if (distance <= 0) {
-        clearInterval(x);
-        document.getElementById("#countH").textContent = "It's time for WELDING!"
-    }
+        if (distance <= 0) {
+            clearInterval(x);
+            document.getElementById("#countH").innerText = "It's time for WELDING!"
+        }
 
-}, second);
+    }, second);
+}
+
 
 // Code for the pre-loader
 // This establishes the variable for the loader
@@ -73,5 +79,5 @@ function loadFunction() {
 // This function sets the display of loader to none and the display of content div to block.
 function showPage() {
     $("#contentdiv").show();
-    $(".loaderCentered").hide();
+    $(".loader").hide();
 }

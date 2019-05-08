@@ -161,64 +161,78 @@ a:hover {
     text-align: center;
 }
 
-.loaderCentered {
-    width: 400px;
-    height: 400px;
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    transition: 1s;
+}
+
+.span {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #333;
-    filter: blur(10px) contrast(20);
+    transform: translate(-50%, 50%);
+    width: 120px;
+    height: 120px;
+    top: 35%;
+    border: 5px solid #535252;
+    z-index: 1;
+    animation: animar 2.5s linear infinite;
 }
 
-.blob-1,
-.blob-2 {
-    width: 70px;
-    height: 70px;
+.span:before {
+    content: '';
     position: absolute;
-    background: #fff;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f90;
+    animation: animarbg 2.5s linear infinite;
 }
 
-.blob-1 {
-    left: 20%;
-    animation: osc-l 2.5s ease infinite;
-}
-
-.blob-2 {
-    left: 80%;
-    animation: osc-r 2.5s ease infinite;
-    background: rgb(255, 145, 0);
-}
-
-@keyframes osc-l {
+@keyframes animar {
     0% {
-        left: 20%;
+        transform: translate(-50%, 50%) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-50%, 50%) rotate(180deg);
     }
 
     50% {
-        left: 50%;
+        transform: translate(-50%, 50%) rotate(180deg);
+    }
+
+    75% {
+        transform: translate(-50%, 50%) rotate(360deg);
     }
 
     100% {
-        left: 20%;
+        transform: translate(-50%, 50%) rotate(360deg);
     }
 }
 
-@keyframes osc-r {
+@keyframes animarbg {
     0% {
-        left: 80%;
+        height: 0;
+    }
+
+    25% {
+        height: 0;
     }
 
     50% {
-        left: 50%;
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
     }
 
     100% {
-        left: 80%;
+        height: 0;
     }
 }
