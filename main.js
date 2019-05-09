@@ -75,6 +75,11 @@ var loader;
 // This function sets the variable to an order pair x being the showPage function and the time in milliseconds being the y.
 function loadFunction() {
     loader = setTimeout(showPage, 2000);
+    document.addEventListener("keydown", function (e) {
+        if ((e.shiftKey) && (e.ctrlKey)) {
+            window.open("easterEGG.html");
+        }
+    });
 }
 // This function sets the display of loader to none and the display of content div to block.
 function showPage() {
