@@ -1,5 +1,8 @@
 /* This is a media query for screens the have a width of 1024px or lower */
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {}
+
+/* This effects the screens that are smaller than 414 pixels  */
+@media screen and (max-width: 414px) {
     .nav {
         display: none;
     }
@@ -8,17 +11,9 @@
         display: block;
     }
 
-}
-
-/* This effects the screens that are smaller than 414 pixels  */
-@media screen and (max-width: 414px) {
     .cardCustom {
         width: 100%;
         margin: .5em;
-    }
-
-    .nav {
-        display: none;
     }
 
     .sideImage {
