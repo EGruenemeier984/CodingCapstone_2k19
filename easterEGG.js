@@ -1,3 +1,4 @@
+// These are all the variables that are defined globaly for the breakout Game.
 var canvas = document.getElementById("gameCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius = 10;
@@ -19,8 +20,9 @@ var brickOffsetTop = 40;
 var brickOffsetLeft = 40;
 var score = 0;
 var lives = 3;
-
+// This is an empty array that the bricks get put into 
 var bricks = [];
+// This loop puts the bricks into the array and then displays them onto the screen.
 for (var c = 0; c < brickColumnCount; c++) {
     bricks[c] = [];
     for (var r = 0; r < brickRowCount; r++) {
@@ -31,11 +33,11 @@ for (var c = 0; c < brickColumnCount; c++) {
         };
     }
 }
-
+// This creates the event listeners for the keypresses 
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 document.addEventListener("mousemove", mouseMoveHandler, false);
-
+// This fucntion handles the key presses and makes the object move.
 function keyDownHandler(e) {
     if (e.key == "Right" || e.key == "ArrowRight") {
         rightPressed = true;
@@ -51,14 +53,14 @@ function keyUpHandler(e) {
         leftPressed = false;
     }
 }
-
+// This function does the sames as the keydownhandler but for the mouse direction.
 function mouseMoveHandler(e) {
     var relativeX = e.clientX - canvas.offsetLeft;
     if (relativeX > 0 && relativeX < canvas.width) {
         paddleX = relativeX - paddleWidth / 2;
     }
 }
-
+// This function detects the collision between the ball, bricks and paddle
 function collisionDetection() {
     for (var c = 0; c < brickColumnCount; c++) {
         for (var r = 0; r < brickRowCount; r++) {
@@ -77,7 +79,7 @@ function collisionDetection() {
         }
     }
 }
-
+// This draws the ball to the page 
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
@@ -85,7 +87,7 @@ function drawBall() {
     ctx.fill();
     ctx.closePath();
 }
-
+// This draws the paddle to the page.
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
@@ -93,7 +95,7 @@ function drawPaddle() {
     ctx.fill();
     ctx.closePath();
 }
-
+// This draws the bricks to the page.
 function drawBricks() {
     for (var c = 0; c < brickColumnCount; c++) {
         for (var r = 0; r < brickRowCount; r++) {
@@ -111,19 +113,19 @@ function drawBricks() {
         }
     }
 }
-
+// This fucntion displays the score to the page
 function drawScore() {
     ctx.font = "16px Arial";
     ctx.fillStyle = "#0095DD";
     ctx.fillText("Score: " + score, 8, 20);
 }
-
+// This function displays the lives to the user.
 function drawLives() {
     ctx.font = "16px Arial";
     ctx.fillStyle = "#0095DD";
     ctx.fillText("Lives: " + lives, canvas.width - 65, 20);
 }
-
+// This function draws the canvas with all the object to appear on it.
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBricks();
