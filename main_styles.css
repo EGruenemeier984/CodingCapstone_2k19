@@ -56,6 +56,8 @@ hr {
 /* This effects the footer and defines its background color. */
 footer {
     background-color: #f90;
+    bottom: 0;
+    width: 100%;
 }
 
 /* This effects the class of iconCustom and defines the text-align and the top margins */
