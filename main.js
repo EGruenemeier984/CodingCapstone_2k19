@@ -47,7 +47,7 @@ $(function () {
     }
 });
 // Tablet Mode 
-$(window).resize(function () {
+$(window).on("resize load", function () {
     if ($(window).width() < 990) {
         $(".colFix1").removeClass("col-sm-5");
         $(".colFix2").removeClass("col-sm-7");
