@@ -48,7 +48,7 @@ $(function () {
 });
 // Tablet Mode 
 $(window).on("resize load", function () {
-    if ($(window).width() < 990) {
+    if ($(window).width() < 990 && $(window).width() > 580) {
         $(".colFix1").removeClass("col-sm-5");
         $(".colFix2").removeClass("col-sm-7");
         $(".colFix1").addClass("col-auto-5");
