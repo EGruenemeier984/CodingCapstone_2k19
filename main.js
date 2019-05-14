@@ -31,18 +31,34 @@ btn.on('click', function (e) {
 });
 // This function is for the mobile slideout menu that opens up the menu when the button is clicked
 $(function () {
-    $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+    if ($(window).width() < 580) {
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
 
-    $(window).resize(function (e) {
-        if ($(window).width() <= 768) {
-            $("#wrapper").removeClass("toggled");
-        } else {
-            $("#wrapper").addClass("toggled");
-        }
-    });
+        $(function (e) {
+            if ($(window).width() <= 760) {
+                $("#wrapper").removeClass("toggled");
+            } else {
+                $("#wrapper").addClass("toggled");
+            }
+        });
+    }
+});
+// Tablet Mode 
+$(window).on("resize load", function () {
+    if ($(window).width() < 990) {
+        $(".colFix1").removeClass("col-sm-5");
+        $(".colFix2").removeClass("col-sm-7");
+        $(".colFix1").addClass("col-auto-5");
+        $(".colFix2").addClass("col-auto-7");
+    } else if ($(window).width() > 990) {
+        $(".colFix1").removeClass("col-auto-5");
+        $(".colFix2").removeClass("col-auto-7");
+        $(".colFix1").addClass("col-sm-5");
+        $(".colFix2").addClass("col-sm-7");
+    }
 });
 
 // CountDown Code

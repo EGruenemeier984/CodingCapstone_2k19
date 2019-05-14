@@ -1,8 +1,13 @@
 /* This is a media query for screens the have a width of 1024px or lower */
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:990px) {
+    .custNav {
+        display: none;
+    }
 
-/* This effects the screens that are smaller than 414 pixels  */
-@media screen and (max-width: 414px) {
+}
+
+/* This effects the screens that are smaller than 580 pixels  */
+@media screen and (max-width: 580px) {
     .nav {
         display: none;
     }
@@ -18,10 +23,6 @@
 
     .sideImage {
         margin-top: 1em;
-    }
-
-    .col-sm-8 {
-        margin: 1em;
     }
 }
 
